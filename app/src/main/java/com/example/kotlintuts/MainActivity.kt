@@ -18,6 +18,5 @@ fun main(){
     val y=10;
 
     val result= x+ y;
-
     println( result);
 }
