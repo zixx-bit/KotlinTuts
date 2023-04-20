@@ -11,5 +11,6 @@ package com.example.kotlintuts
 //}
 fun main(){
     var ageGrup: Int = 5
+
     println(ageGrup)
 }
