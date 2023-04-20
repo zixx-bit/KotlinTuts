@@ -13,4 +13,11 @@ fun main(){
     var ageGrup: Int = 5
 
     println(ageGrup)
+
+    val x = 5;
+    val y=10;
+
+    val result= x+ y;
+
+    println( result);
 }
