@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
 }
 fun main(){
     var ageGrup: Int = 5
-
     println(ageGrup)
     val x = 5;
     val y=10;
