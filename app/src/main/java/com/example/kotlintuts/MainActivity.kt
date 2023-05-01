@@ -16,7 +16,7 @@ fun main(){
     val y=10;
     val result= x+ y;
     val name = "edward michira"
-    val age = 27
+    val age = 27;
 
-        println( name.reversed()   + age);
+        println( name.reversed() + age);
 }
