@@ -10,13 +10,12 @@
 //    }
 //}
 fun main(){
-    var ageGrup: Int = 5
-    println(ageGrup)
-    val x = 5;
-    val y=10;
-    val result= x+ y;
-    val name = "edward michira"
-    val age = 27;
-
-        println( name.reversed() + age);
+  val myArray = arrayOf(4,5,6,1,3)
+    var max = myArray[0]
+    for (item in myArray){
+        if (item < max){
+            max = item
+        }
+    }
+    println(max)
 }
