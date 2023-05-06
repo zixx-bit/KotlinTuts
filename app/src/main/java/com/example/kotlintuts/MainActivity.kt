@@ -1,21 +1,17 @@
 
 
 fun main(){
+    val Max = getMax(1,2,37,45)
+    println("the max number is $Max")
 
-   val pow = printPow(3,5)
-    println("3 to the power of 5 is $pow")
-    multiply(3,5)
-    println(multiply(3, 5))
 }
 
-//one line function
-fun multiply(a:Int , b:Int) = a * b
-fun printPow(base: Int, exponent: Int): Int{
-    var result = 1
-    for (i in 1..exponent){
-        result *= base
+fun getMax(vararg numbers: Int): Int{
+    var max = numbers[0]
+    for (i in numbers){
+        if (i > max){
+            max = i
+        }
     }
-//    println("$base to power $exponent is $result")
-    return result
-
+    return max
 }
