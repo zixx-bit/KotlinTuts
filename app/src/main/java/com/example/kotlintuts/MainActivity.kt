@@ -2,9 +2,9 @@
 
 fun main(){
     println("which country are you from")
-    val country = readln()
+    val Country = readln()
 
-    when(country){
+    when(Country){
         "India" -> println("Namastte")
         "Russia" -> println("Privet")
         "Usa" -> println("Hello")
