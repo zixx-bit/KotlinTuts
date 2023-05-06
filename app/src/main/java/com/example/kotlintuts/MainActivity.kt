@@ -13,7 +13,7 @@ fun multiply(a:Int , b:Int) = a * b
 fun printPow(base: Int, exponent: Int): Int{
     var result = 1
     for (i in 1..exponent){
-        result = result * base
+        result *= base
     }
 //    println("$base to power $exponent is $result")
     return result
