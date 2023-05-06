@@ -2,7 +2,7 @@
 
 fun main(){
     printPow(2,2)
-    printPow(100,10)
+    printPow(100,4)
 
 
 }
