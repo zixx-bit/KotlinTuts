@@ -5,6 +5,9 @@ fun main(){
     println("the max number is $Max")
 
 }
+fun searchFor(search: String, searchEngine: String = "Google"){
+    println("seraching for '$search")
+}
 fun getMax(vararg numbers: Int): Int{
     var max = numbers[0]
     for (i in numbers){
