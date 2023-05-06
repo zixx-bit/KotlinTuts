@@ -1,13 +1,17 @@
 
 
 fun main(){
-    println("which country are you from")
-    val Country = readln()
+    printPow(2,2)
+    printPow(100,10)
 
-    when(Country){
-        "India" -> println("Namastte")
-        "Russia" -> println("Privet")
-        "Usa" -> println("Hello")
-        else -> println("I dont know that")
+
+}
+
+fun printPow(base: Int, exponent: Int){
+    var result = 1
+    for (i in 1..exponent){
+        result = result * base
     }
+    println("$base to power $exponent is $result")
+
 }
