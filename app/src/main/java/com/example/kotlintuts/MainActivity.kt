@@ -5,7 +5,6 @@ fun main(){
     println("the max number is $Max")
 
 }
-
 fun getMax(vararg numbers: Int): Int{
     var max = numbers[0]
     for (i in numbers){
