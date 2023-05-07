@@ -1,12 +1,12 @@
 
 
 fun main(){
-    val Max = getMax(1,2,37,45)
-    println("the max number is $Max")
+  searchFor("how to become a good progmmer")
+    searchFor("how to become a good programmer", "bing")
 
 }
 fun searchFor(search: String, searchEngine: String = "Google"){
-    println("seraching for '$search")
+    println("seraching for '$search' on $searchEngine")
 }
 fun getMax(vararg numbers: Int): Int{
     var max = numbers[0]
