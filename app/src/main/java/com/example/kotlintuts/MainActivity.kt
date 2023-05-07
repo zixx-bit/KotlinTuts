@@ -5,6 +5,10 @@ fun main(){
     val input = readLine()?.toInt()
 
     if (input != null){
+        if (input.isPrime()){
+
+        }
+        println("$input")
 
     }
 }
