@@ -6,15 +6,16 @@ fun main(){
 
     if (input != null){
         if (input.isPrime()){
-
+            println("$input is a prime number" )
+        }else{
+            println("$input is not a prime number")
         }
-        println("$input")
 
     }
 }
 
 fun Int.isPrime(): Boolean{
-    for (i in 2 until this-1){
+    for (i in 2 until this - 1){
         if (this % 1 == 0){
             return false
         }
