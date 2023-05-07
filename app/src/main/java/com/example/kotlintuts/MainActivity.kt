@@ -1,7 +1,8 @@
 
 
 fun main(){
-   var result = getMax(10,78,4,2,3,6,55)
+    var numbers = readLine()?.toInt()
+   var result = getMax()
     println(result)
   searchFor("how to become a good progmmer")
     searchFor("how to become a good programmer", "bing")
