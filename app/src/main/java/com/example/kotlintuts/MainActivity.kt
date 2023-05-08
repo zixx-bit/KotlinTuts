@@ -1,5 +1,6 @@
 import com.example.kotlintuts.Circle
 import com.example.kotlintuts.Rectangle
+import com.example.kotlintuts.Triangle
 
 fun main(){
     val myRect = Rectangle(10.0, 20.0 )
@@ -13,5 +14,7 @@ fun main(){
 
     println("area of circle is ${myCircle.area()}")
     println("perimeter of circle is ${myCircle.perimeter()}")
+
+    val myTriangle = Triangle(3.0,4.0,5.0)
 
 }
