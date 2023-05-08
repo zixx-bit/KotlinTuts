@@ -6,7 +6,6 @@ class Triangle(val a:Double, val b:Double, val c:Double) {
     init {
         println("The area of triangle is ${area()}")
         println("The perimeter of triangle is ${perimeter()}")
-        println(sqrt(9.0 ))
     }
 
 
