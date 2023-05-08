@@ -8,6 +8,9 @@ fun main(){
     println("is square? is ${myRect.isSquare()}")
 
     val myCircle= Circle(7.0)
+    val myCircle2= Circle(5.0)
+
+
     println("area of circle is ${myCircle.area()}")
     println("perimeter of circle is ${myCircle.perimeter()}")
 
