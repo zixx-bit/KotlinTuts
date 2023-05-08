@@ -15,6 +15,6 @@ fun main(){
     println("area of circle is ${myCircle.area()}")
     println("perimeter of circle is ${myCircle.perimeter()}")
 
-    val myTriangle = Triangle(3.0,4.0,5.0)
+    val myTriangle = Triangle(2.0,4.0,6.0)
 
 }
