@@ -2,7 +2,7 @@ package com.example.kotlintuts
 
 import kotlin.math.sqrt
 
-class Triangle(val a:Double, val b:Double, val c:Double) {
+class Triangle(val a:Double, val b:Double, val c:Double) : Shape( "Edd"){
     init {
         println("The area of triangle is ${area()}")
         println("The perimeter of triangle is ${perimeter()}")
