@@ -1,7 +1,7 @@
 package com.example.kotlintuts
 
 class Circle(val radius: Double) {
-   private val pi=3.142
+   val pi=3.142
     init {
         println("circle created with radius = $radius")
     }
