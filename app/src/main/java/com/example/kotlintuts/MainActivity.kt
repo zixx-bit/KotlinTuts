@@ -10,6 +10,7 @@ fun main(){
 
     val myCircle= Circle(7.0)
     val myCircle2= Circle(5.0)
+    myCircle.pi
 
 
     println("area of circle is ${myCircle.area()}")
