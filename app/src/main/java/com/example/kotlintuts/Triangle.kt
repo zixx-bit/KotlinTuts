@@ -9,8 +9,8 @@ class Triangle(val a:Double, val b:Double, val c:Double) : Shape( "Edd"){
     }
 
 
-    fun area()= 0.5 * a * b *c
+    override fun area()= 0.5 * a * b *c
 
 
-    fun perimeter() = 0.5 * 2.0*a+2.0*b
+   override fun perimeter() = 0.5 * 2.0*a+2.0*b
 }
