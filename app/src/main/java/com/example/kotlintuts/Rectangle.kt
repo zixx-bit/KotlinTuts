@@ -1,14 +1,14 @@
 package com.example.kotlintuts
 
-class Rectangle(val a: Double,val b: Double){
+class Rectangle(val a: Double,val b: Double): Shape("Rectangle"){
     init {
 
         println("Reactangle created with a= $a and b = $b is ")
     }
 
-    fun area() = a * b
+    override fun area(): Double = a * b
 
-    fun perimeter() = 2 * a +2*b
+    override fun perimeter(): Double = 2 * a +2*b
 
     fun isSquare() = a==b
 }
