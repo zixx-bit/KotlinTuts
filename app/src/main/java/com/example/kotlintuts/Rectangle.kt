@@ -1,9 +1,11 @@
 package com.example.kotlintuts
 
 class Rectangle(val a: Double,val b: Double): Shape("Rectangle"){
-    init {
+    constructor(a: Double):this(a, a)
 
-        println("Reactangle created with a= $a and b = $b is ")
+    constructor(a:Int, b:Int): this(a.toDouble(), b.toDouble())
+    init {
+        println("$name created with a= $a and b = $b is ")
     }
 
     override fun area(): Double = a * b
