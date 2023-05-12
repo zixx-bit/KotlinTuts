@@ -6,7 +6,7 @@ class Circle(val radius: Double): Shape("rose") {
     }
 
     override fun area(): Double {
-        val result = radius * radius * pi
+        val result = radius * radius * ImportantNumbers.PI
         return result
 
     }
