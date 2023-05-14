@@ -2,7 +2,7 @@ package com.example.kotlintuts
 
 import kotlin.random.Random
 
-class Circle(val radius: Double) {
+class Circle(val radius: Double): Shape("rose") {
     fun randomCircle(): Circle {
         val radius = Random.nextDouble(1.0,10.0)
         return Circle(radius)
@@ -21,6 +21,6 @@ class Circle(val radius: Double) {
 
 
 
-     fun area(): Double = radius * radius * ImportantNumbers.PI
-     fun perimeter(): Double = 2 * radius * ImportantNumbers.PI
+    override fun area(): Double = radius * radius * ImportantNumbers.PI
+    override fun perimeter(): Double = 2 * radius * ImportantNumbers.PI
 }
