@@ -22,5 +22,5 @@ class Circle(val radius: Double): Shape("rose") {
     }
 
     override fun area(): Double = radius * radius * ImportantNumbers.PI
-    override fun perimeter() = 2 * radius * ImportantNumbers.PI
+    override fun perimeter(): Double = 2 * radius * ImportantNumbers.PI
 }
