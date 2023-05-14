@@ -7,7 +7,7 @@ package com.example.kotlintuts
         name = newName
     }
 
-     abstract fun area()
+     abstract fun area():Double
 
-     abstract fun perimeter()
+     abstract fun perimeter():Double
 }
