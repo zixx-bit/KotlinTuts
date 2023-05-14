@@ -1,5 +1,5 @@
 package com.example.kotlintuts
 
 object ImportantNumbers {
-    val PI = 3.142
+    val PI: Double = 3.142
 }

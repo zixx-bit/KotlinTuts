@@ -14,5 +14,7 @@ fun main(){
     println("perimeter of circle is ${myCircle.perimeter()}")
 
     val myTriangle = Triangle(2.0,4.0,6.0)
+    val myc = Circle
+    val c = myc.randomCircle()
 
 }
