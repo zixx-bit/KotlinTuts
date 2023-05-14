@@ -1,7 +1,7 @@
 package com.example.kotlintuts
 
-class Rectangle(val a: Double,val b: Double): Shape("Rectangle"){
-    constructor(a: Double):this(a, a)
+class Rectangle(val a: Double, val b: Double): Shape("Rectangle"){
+    constructor(a: Double): this(a, a)
 
     constructor(a:Int, b:Int): this(a.toDouble(), b.toDouble())
     init {
