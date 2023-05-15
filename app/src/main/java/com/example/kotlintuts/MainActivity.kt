@@ -36,16 +36,16 @@ fun main(){
 //
     val division = try {
         divide(5.0,6.0)
-    } catch (e: DivisionByZero){
+    } catch (e: DivisionByZeroException){
 
     }
     println(divide(5.0,2.0))
 }
 
-    class DivisionByZero: Exception("You cannot divide by zero. Please choose a different number")
+    class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
     fun divide(a:Double, b:Double): Double{
         if (b==0.0){
-            throw DivisionByZero()
+            throw DivisionByZeroException()
         }
         return a/b
     }
