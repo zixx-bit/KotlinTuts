@@ -40,7 +40,6 @@ fun main(){
         0
     }
     println(division)
-
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
