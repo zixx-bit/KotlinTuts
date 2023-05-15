@@ -34,8 +34,20 @@ fun main(){
 //    }
 //    println("You entered : $input")
 //
+    val division = try {
+        divide(5.0,6.0)
+    } catch (e: DivisionByZero){
 
+    }
 }
+
+    class DivisionByZero: Exception("You cannot divide by zero. Please choose a different number")
+    fun divide(a:Double, b:Double): Double{
+        if (b==0.0){
+            throw DivisionByZero()
+        }
+        return a/b
+    }
 
     fun printAlternately(list: List<Int>){
         var i = 0
