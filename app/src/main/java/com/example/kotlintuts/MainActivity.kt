@@ -35,11 +35,12 @@ fun main(){
 //    println("You entered : $input")
 //
     val division = try {
-        divide(5.0,6.0)
+        divide(5.0,0.0)
     } catch (e: DivisionByZeroException){
-
+        0
     }
-    println(divide(5.0,2.0))
+    println(division)
+
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
