@@ -23,17 +23,17 @@ fun main(){
 //    println("List: $list")
 //    printAlternately(array)
 
-    println("Please enter a number")
-    val input = try {
-        readln()?.toInt()
-
-    }catch (e: NumberFormatException){
-        0
-    }finally {
-        println("this is the final block")
-    }
-    println("You entered : $input")
-
+//    println("Please enter a number")
+//    val input = try {
+//        readln()?.toInt()
+//
+//    }catch (e: NumberFormatException){
+//        0
+//    }finally {
+//        println("this is the final block")
+//    }
+//    println("You entered : $input")
+//
 
 }
 
