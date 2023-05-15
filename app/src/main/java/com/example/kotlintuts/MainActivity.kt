@@ -39,6 +39,7 @@ fun main(){
     } catch (e: DivisionByZero){
 
     }
+    println(divide(5.0,0.0))
 }
 
     class DivisionByZero: Exception("You cannot divide by zero. Please choose a different number")
