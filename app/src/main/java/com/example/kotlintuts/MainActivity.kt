@@ -39,7 +39,7 @@ fun main(){
     } catch (e: DivisionByZeroException){
         0
     }
-    println("the result of the division is $division")
+    println("the result of the division  $division")
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
