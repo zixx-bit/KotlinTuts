@@ -54,6 +54,13 @@ fun main(){
     val rectangle = Rectangle(4.2)
     val rectangle2 = Rectangle(4,4)
 
+    var shapes = listOf(circle, circle2, triangle, triangle2, rectangle, rectangle2)
+    shapes = shapes.filter { it.area() > 20 }
+
+    for (shape in shapes){
+        println("${shape.name}: area = ${shape.area()}")
+    }
+
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
