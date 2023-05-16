@@ -107,7 +107,7 @@ fun main(){
         }
     }
 
-fun List<Shape>.customFilter(filterFunction: (Shape) -> (Boolean)):List<Shape>{
+fun List<Shape>.customFilter(filterFunction: (Shape) -> (Boolean)): List<Shape>{
     val resultList = mutableListOf<Shape>()
     for (shape in this){
         if (filterFunction(shape)){}
