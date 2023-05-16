@@ -46,6 +46,14 @@ fun main(){
     //lambda function list
     list = list.filter { it>8 }
     println(list)
+
+    val circle = Circle(2.0)
+    val circle2 = Circle(5.0)
+    val triangle = Triangle(4.2,5.1,6.2)
+    val triangle2 = Triangle(1.2,4.5,7.2)
+    val rectangle = Rectangle(4.2)
+    val rectangle2 = Rectangle(4,4)
+
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
