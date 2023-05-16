@@ -23,23 +23,29 @@ fun main(){
 //    println("List: $list")
 //    printAlternately(array)
 
-    println("Please enter a number")
-    val input = try {
-        readln()?.toInt()
+//    println("Please enter a number")
+//    val input = try {
+//        readln()?.toInt()
+//
+//    }catch (e: NumberFormatException){
+//        0
+//    }finally {
+//        println("this is the final block")
+//    }
+//    println("You entered : $input")
+//
+//    val division = try {
+//        divide(5.0,0.0)
+//    } catch (e: DivisionByZeroException){
+//        0
+//    }
+//    println("the result of the division  $division")
 
-    }catch (e: NumberFormatException){
-        0
-    }finally {
-        println("this is the final block")
-    }
-    println("You entered : $input")
-
-    val division = try {
-        divide(5.0,0.0)
-    } catch (e: DivisionByZeroException){
-        0
-    }
-    println("the result of the division  $division")
+    var list: List<Int> = (1..20).toList()
+    println(list)
+    //lambda function list
+    list = list.filter { it%2==0 }
+    println(list)
 }
 
     class DivisionByZeroException: Exception("You cannot divide by zero. Please choose a different number")
