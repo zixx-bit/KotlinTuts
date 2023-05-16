@@ -57,7 +57,7 @@ fun main(){
 
     var shapes = listOf(circle, circle2, triangle, triangle2, rectangle, rectangle2)
 //    lambda function( a function that takes another function as a parameter)
-    shapes = shapes.filter { it.area() < 20 }.sortedBy { it.area() }
+    shapes = shapes.customFilter { it.area() < 20 }.sortedBy { it.area() }
 
     for (shape in shapes){
         println("${shape.name}: area = ${shape.area()}")
@@ -110,8 +110,9 @@ fun main(){
 fun List<Shape>.customFilter(filterFunction: (Shape) -> (Boolean)): List<Shape>{
     val resultList = mutableListOf<Shape>()
     for (shape in this){
-        if (filterFunction(shape)){}
+        if (filterFunction(shape)){
         resultList.add(shape)
+        }
     }
     return resultList
 }
