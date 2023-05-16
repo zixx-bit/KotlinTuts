@@ -51,11 +51,12 @@ fun main(){
     val circle2 = Circle(5.0)
     val triangle = Triangle(4.2,5.1,6.2)
     val triangle2 = Triangle(1.2,4.5,7.2)
-    val rectangle = Rectangle(4.2)
+    val rectangle = Rectangle(6.2)
     val rectangle2 = Rectangle(4,4)
 
     var shapes = listOf(circle, circle2, triangle, triangle2, rectangle, rectangle2)
-    shapes = shapes.filter { it.area() > 20 }
+//    lambda function( a function that takes another function as a parameter)
+    shapes = shapes.filter { it.area() < 20 }.sortedBy { it.area() }
 
     for (shape in shapes){
         println("${shape.name}: area = ${shape.area()}")
