@@ -1,5 +1,6 @@
 import com.example.kotlintuts.Circle
 import com.example.kotlintuts.Rectangle
+import com.example.kotlintuts.Shape
 import com.example.kotlintuts.Triangle
 
 fun main(){
@@ -105,5 +106,14 @@ fun main(){
             toggle = !toggle
         }
     }
+
+fun List<Shape>.customFilter(filterFunction: (Shape) -> (Boolean)):List<Shape>{
+    val resultList = mutableListOf<Shape>()
+    for (shape in this){
+        if (filterFunction(shape)){}
+        resultList.add(shape)
+    }
+    return resultList
+}
 
 
