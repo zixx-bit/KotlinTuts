@@ -44,7 +44,7 @@ fun main(){
     var list: List<Int> = (1..20).toList()
     println(list)
     //lambda function list
-    list = list.filter { it%2==0 }
+    list = list.filter { it>8 }
     println(list)
 }
 
