@@ -1,6 +1,6 @@
 import com.example.kotlintuts.Circle
 import com.example.kotlintuts.Rectangle
-import com.example.kotlintuts.Shape
+import com.example.kotlintuts.T
 import com.example.kotlintuts.Triangle
 
 fun main(){
@@ -55,6 +55,8 @@ fun main(){
     val rectangle = Rectangle(6.2)
     val rectangle2 = Rectangle(4,4)
 
+    var intergers = (1..10).toList().customFilter { it > 5 }
+
     var shapes = listOf(circle, circle2, triangle, triangle2, rectangle, rectangle2)
 //    lambda function( a function that takes another function as a parameter)
     shapes = shapes.customFilter { it.area() < 20 }.sortedBy { it.area() }
@@ -107,11 +109,11 @@ fun main(){
         }
     }
 
-fun List<Shape>.customFilter(filterFunction: (Shape) -> (Boolean)): List<Shape>{
-    val resultList = mutableListOf<Shape>()
-    for (shape in this){
-        if (filterFunction(shape)){
-        resultList.add(shape)
+fun <T> List<T>.customFilter(filterFunction: (T) -> (Boolean)): List<T>{
+    val resultList = mutableListOf<T>()
+    for (item in this){
+        if (filterFunction(item)){
+        resultList.add(item)
         }
     }
     return resultList
