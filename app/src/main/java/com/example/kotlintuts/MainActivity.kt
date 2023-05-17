@@ -57,6 +57,10 @@ fun main(){
 
     var intergers = (1..10).toList().customFilter { it > 5 }
 
+//    classes with generic type parameters
+    val Triple = Triple<Int, String, Boolean>(3, "hello", true) //this is the same as
+     val Triple1 = Triple(3,"hello", true)
+
     var shapes = listOf(circle, circle2, triangle, triangle2, rectangle, rectangle2)
 //    lambda function( a function that takes another function as a parameter)
     shapes = shapes.customFilter { it.area() < 20 }.sortedBy { it.area() }
