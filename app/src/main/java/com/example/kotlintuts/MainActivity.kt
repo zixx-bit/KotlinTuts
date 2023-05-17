@@ -1,7 +1,7 @@
 import com.example.kotlintuts.Circle
 import com.example.kotlintuts.Rectangle
-import com.example.kotlintuts.T
 import com.example.kotlintuts.Triangle
+import com.example.kotlintuts.customTriple
 
 fun main(){
 //    val myRect = Rectangle(10.0, 20.0 )
@@ -68,6 +68,10 @@ fun main(){
     for (shape in shapes){
         println("${shape.name}: area = ${shape.area()}")
     }
+
+    customTriple.prin
+
+
 
 }
 
