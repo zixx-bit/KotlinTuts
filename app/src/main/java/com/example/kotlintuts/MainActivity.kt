@@ -68,9 +68,9 @@ fun main(){
     for (shape in shapes){
         println("${shape.name}: area = ${shape.area()}")
     }
-
-    customTriple.prin
-
+//    classes with generic type parameters
+    var customTriple = customTriple<Int, String, Boolean>(3,"hello", true)
+    customTriple.printTypes()
 
 
 }
